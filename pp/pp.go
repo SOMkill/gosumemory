@@ -9,11 +9,6 @@ import (
 	"github.com/spf13/cast"
 )
 
-/*
-#cgo LDFLAGS: -L../lib -lakatsuki_pp_ffi
-#include "../lib/akatsuki_pp_ffi.h"
-#include <stdlib.h>
-*/
 import "C"
 
 type Calculator struct {
