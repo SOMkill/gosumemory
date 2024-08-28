@@ -277,11 +277,11 @@ func getGamplayData() {
 	} else {
 		MenuData.Mods.PpMods = Mods(gameplayData.ModsXor1 ^ gameplayData.ModsXor2).String()
 	}
-	if strings.Contains(MenuData.Mods.PpMods, "V2") {
+	// if strings.Contains(MenuData.Mods.PpMods, "V2") {
 		GameplayData.Score = gameplayData.ScoreV2
-	} else {
-		GameplayData.Score = gameplayData.Score
-	}
+		// } else {
+		// 	GameplayData.Score = gameplayData.Score
+		// }
 	if GameplayData.Combo.Max > 0 {
 		GameplayData.Hits.HitErrorArray = gameplayData.HitErrors
 		baseUR, _ := calculateUR(GameplayData.Hits.HitErrorArray)
